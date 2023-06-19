@@ -1,0 +1,131 @@
+:root{
+    --border: #000000;
+    --shadow: #1B2C34;
+    --topbar: #444140;
+    --background: #1E1E24;
+
+    --cell: #17BEBB;
+    --rightCell: #CD5334;
+}
+@keyframes winAnim {
+    0%   {background-color: var(--rightCell);}
+    45%  {background-color: #748CAB;}
+    100%  {background-color: var(--rightCell);}
+
+  }
+
+html{
+    height: 99%;
+}
+body{
+    height: 100%;
+    background-image: linear-gradient(#1E1E24,#CD5334);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+.canvas{
+    margin: auto;
+    background-color: var(--background);
+    border: 10px outset  var(--border);
+    width: 600px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    border-radius: 20px;
+    box-shadow: 1px 1px  20px  var(--shadow) ;
+    
+}
+
+#topBar{
+    
+    width: 570px;
+    padding: 5px;
+    border-radius: 20px ;
+    background-color: var(--topbar);
+    box-shadow: 1px 1px 10px var(--shadow);
+    margin-top: 15px;
+    
+}
+
+#bottomBar{
+    width: 600px; 
+    padding: 5px;
+    border-radius: 20px ;
+    background-color: var(--cell);
+    border: 5px #A8140F;
+    border-style:outset;
+    
+    font-size: x-large;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+#newGame, #time, #moves{
+    
+    border: 3px solid;
+    width: 28.6%;
+    padding: 5px;
+    margin: 30px 5px;
+    float: left;
+    font-size: xx-large;
+    text-align: center;
+    border-radius: 10px;
+    border-color: var(--border);
+    background-color: var(--cell);
+    box-shadow: 5px 5px var(--shadow);
+
+}
+
+.playGround{
+    margin: 2vh;
+    height: 500px;
+    width: 500px;
+    border: 5px outset;
+    background-color: var(--background);
+    border-radius: 10px;
+    border-color: var(--border);
+    background: var(--topbar);
+    padding: 5px;
+    
+}
+
+#cellContainer{
+    border: 1px solid;
+    margin: 3px;
+    border-radius: 10px;
+    width: 23.4%;
+    height: 23.4%;
+    background-color: var(--cell);
+    float: left;
+    text-align: center;
+    font-size: xxx-large;
+    line-height: 250%;
+}
+
+#EmptyCell{
+    border: 1px solid;
+    margin: 3px;
+    border-radius: 10px;
+    width: 23.4%;
+    height: 23.4%;
+    background-color: var(--shadow);
+    float: left;
+    
+}
+
+#RigthPosition{
+    border: 1px solid;
+    margin: 3px;
+    border-radius: 10px;
+    width: 23.4%;
+    height: 23.4%;
+    background-color: var(--rightCell);
+    float: left;
+    text-align: center;
+    font-size: xxx-large;
+    line-height: 250%;
+}
